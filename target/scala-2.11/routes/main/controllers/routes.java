@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/conf/routes
-// @DATE:Wed Apr 26 15:21:57 COT 2017
+// @SOURCE:C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/conf/routes
+// @DATE:Thu Apr 27 21:35:52 GMT+05:00 2017
 
 package controllers;
 
@@ -15,6 +15,7 @@ public class routes {
   public static final controllers.ReversePlantaController PlantaController = new controllers.ReversePlantaController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseHomeController HomeController = new controllers.ReverseHomeController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseAsyncController AsyncController = new controllers.ReverseAsyncController(RoutesPrefix.byNamePrefix());
+  public static final controllers.ReverseUsuarioController UsuarioController = new controllers.ReverseUsuarioController(RoutesPrefix.byNamePrefix());
 
   public static class javascript {
     
@@ -24,6 +25,7 @@ public class routes {
     public static final controllers.javascript.ReversePlantaController PlantaController = new controllers.javascript.ReversePlantaController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseHomeController HomeController = new controllers.javascript.ReverseHomeController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseAsyncController AsyncController = new controllers.javascript.ReverseAsyncController(RoutesPrefix.byNamePrefix());
+    public static final controllers.javascript.ReverseUsuarioController UsuarioController = new controllers.javascript.ReverseUsuarioController(RoutesPrefix.byNamePrefix());
   }
 
 }

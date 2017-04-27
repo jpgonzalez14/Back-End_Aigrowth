@@ -1,5 +1,5 @@
 [0m[[0minfo[0m] [0mSetting up Play fork run ... (use Ctrl+D to cancel)[0m
-[0m[[0minfo[0m] [0mUpdating {file:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/}root...[0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-enhancer;1.1.0 ...[0m
 [0m[[0minfo[0m] [0mResolving org.javassist#javassist;3.18.2-GA ...[0m
@@ -111,7 +111,6 @@
 [0m[[0minfo[0m] [0mResolving org.postgresql#postgresql;9.4-1206-jdbc42 ...[0m
 [0m[[0minfo[0m] [0mResolving org.apache.shiro#shiro-web;1.2.3 ...[0m
 [0m[[0minfo[0m] [0mResolving com.sun.jersey#jersey-servlet;1.13 ...[0m
-[0m[[0minfo[0m] [0mResolving org.slf4j#slf4j-api;1.7.21 ...[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.5.10 ...[0m
 [0m[[0minfo[0m] [0mResolving junit#junit;4.12 ...[0m
 [0m[[0minfo[0m] [0mResolving org.hamcrest#hamcrest-core;1.3 ...[0m
@@ -195,20 +194,19 @@
 [0m[[0minfo[0m] [0mResolving net.contentobjects.jnotify#jnotify;0.94-play-1 ...[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
 [0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0m[35m--- (Running the application, auto-reloading is enabled) ---[0m[0m
+[0m[[0minfo[0m] [0m--- (Running the application, auto-reloading is enabled) ---[0m
 [0m[[0minfo[0m] [0m[0m
 [0m[[0minfo[0m] [0mp.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:9000[0m
 [0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0m[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m[0m
+[0m[[0minfo[0m] [0m(Server started, use Ctrl+D to stop and go back to the console...)[0m
 [0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0mCompiling 1 Java source to /Users/jp.gonzalez14/Documents/workspace/backaigrowth/target/scala-2.11/classes...[0m
 [0m[[0minfo[0m] [0mapplication - Creating Pool for datasource 'default'[0m
-[0m[[0minfo[0m] [0mp.a.d.DefaultDBApi - Database [default] connected at jdbc:postgresql://localhost:5433/aigrowthdatabase[0m
-[0m[[33mwarn[0m] [0mapplication - application.conf @ file:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead[0m
+[0m[[0minfo[0m] [0mp.a.d.DefaultDBApi - Database [default] connected at jdbc:postgresql://localhost:5432/aigrowthdatabase[0m
+[0m[[33mwarn[0m] [0mapplication - application.conf @ file:/C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead[0m
 [0m[[31merror[0m] [0mo.j.StatementLogger - java.sql.Statement.executeQuery: select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%';[0m
-[0m[[0minfo[0m] [0mthrows exception: org.postgresql.util.PSQLException: ERROR: relation "play_evolutions" does not exist[0m
+[0m[[0minfo[0m] [0mthrows exception: org.postgresql.util.PSQLException: ERROR: no existe la relación «play_evolutions»[0m
 [0m[[0minfo[0m] [0m  Position: 72[0m
-[0m[[0minfo[0m] [0morg.postgresql.util.PSQLException: ERROR: relation "play_evolutions" does not exist[0m
+[0m[[0minfo[0m] [0morg.postgresql.util.PSQLException: ERROR: no existe la relación «play_evolutions»[0m
 [0m[[0minfo[0m] [0m  Position: 72[0m
 [0m[[0minfo[0m] [0m	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2182)[0m
 [0m[[0minfo[0m] [0m	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1911)[0m
@@ -220,16 +218,16 @@
 [0m[[0minfo[0m] [0m	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)[0m
 [0m[[0minfo[0m] [0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
 [0m[[0minfo[0m] [0m	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m
-[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Starting application at 2017-04-26T20:48:07.552Z[0m
-[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Stopping application at 2017-04-26T20:48:08.894Z after 1s.[0m
+[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Starting application at 2017-04-27T17:05:43.501Z[0m
+[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Stopping application at 2017-04-27T17:05:45.141Z after 2s.[0m
 [0m[[0minfo[0m] [0mapplication - Shutting down connection pool.[0m
 [0m[[0minfo[0m] [0mapplication - Creating Pool for datasource 'default'[0m
-[0m[[0minfo[0m] [0mp.a.d.DefaultDBApi - Database [default] connected at jdbc:postgresql://localhost:5433/aigrowthdatabase[0m
-[0m[[33mwarn[0m] [0mapplication - application.conf @ file:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead[0m
-[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Starting application at 2017-04-26T20:48:09.238Z[0m
+[0m[[0minfo[0m] [0mp.a.d.DefaultDBApi - Database [default] connected at jdbc:postgresql://localhost:5432/aigrowthdatabase[0m
+[0m[[33mwarn[0m] [0mapplication - application.conf @ file:/C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead[0m
+[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Starting application at 2017-04-27T17:05:46.175Z[0m
 [0m[[31merror[0m] [0mapplication - [0m
 [0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0m! @73nl0d9do - Internal server error, for (GET) [/plantas] ->[0m
+[0m[[0minfo[0m] [0m! @73o149po3 - Internal server error, for (GET) [/] ->[0m
 [0m[[0minfo[0m] [0m [0m
 [0m[[0minfo[0m] [0mplay.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.][0m
 [0m[[0minfo[0m] [0m	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$play$api$db$evolutions$ApplicationEvolutions$$runEvolutions$1.apply$mcV$sp(ApplicationEvolutions.scala:77)[0m
@@ -242,64 +240,16 @@
 [0m[[0minfo[0m] [0m	at play.api.db.evolutions.ApplicationEvolutions.<init>(ApplicationEvolutions.scala:150)[0m
 [0m[[0minfo[0m] [0m	at play.api.db.evolutions.ApplicationEvolutionsProvider.get$lzycompute(EvolutionsModule.scala:53)[0m
 [0m[[0minfo[0m] [0m	at play.api.db.evolutions.ApplicationEvolutionsProvider.get(EvolutionsModule.scala:53)[0m
-[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Stopping application at 2017-04-26T20:48:19.629Z after 10s.[0m
+[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Stopping application at 2017-04-27T17:06:07.773Z after 21s.[0m
 [0m[[0minfo[0m] [0mapplication - Shutting down connection pool.[0m
 [0m[[0minfo[0m] [0mapplication - Creating Pool for datasource 'default'[0m
-[0m[[0minfo[0m] [0mp.a.d.DefaultDBApi - Database [default] connected at jdbc:postgresql://localhost:5433/aigrowthdatabase[0m
-[0m[[33mwarn[0m] [0mapplication - application.conf @ file:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead[0m
-[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Starting application at 2017-04-26T20:48:20.336Z[0m
+[0m[[0minfo[0m] [0mp.a.d.DefaultDBApi - Database [default] connected at jdbc:postgresql://localhost:5432/aigrowthdatabase[0m
+[0m[[33mwarn[0m] [0mapplication - application.conf @ file:/C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead[0m
+[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Starting application at 2017-04-27T17:06:08.621Z[0m
 [0m[[0minfo[0m] [0mplay.api.Play - Application started (Dev)[0m
-[0m[[31merror[0m] [0mapplication - [0m
-[0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0m! @73nl0ofl0 - Internal server error, for (POST) [/categoria] ->[0m
-[0m[[0minfo[0m] [0m [0m
-[0m[[0minfo[0m] [0mplay.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[CompletionException: java.lang.RuntimeException: java.lang.NullPointerException]][0m
-[0m[[0minfo[0m] [0m	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)[0m
-[0m[[0minfo[0m] [0m	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)[0m
-[0m[[0minfo[0m] [0m	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)[0m
-[0m[[0minfo[0m] [0m	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)[0m
-[0m[[0minfo[0m] [0m	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)[0m
-[0m[[0minfo[0m] [0m	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)[0m
-[0m[[0minfo[0m] [0m	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)[0m
-[0m[[0minfo[0m] [0mCaused by: java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.NullPointerException[0m
-[0m[[0minfo[0m] [0m	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)[0m
-[0m[[0minfo[0m] [0m	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)[0m
-[0m[[0minfo[0m] [0m	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:593)[0m
-[0m[[0minfo[0m] [0m	at java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:577)[0m
-[0m[[0minfo[0m] [0m	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)[0m
-[0m[[0minfo[0m] [0m	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:21)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:18)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)[0m
-[0m[[0minfo[0m] [0mCaused by: java.lang.RuntimeException: java.lang.NullPointerException[0m
-[0m[[0minfo[0m] [0m	at play.libs.Json.fromJson(Json.java:87)[0m
-[0m[[0minfo[0m] [0m	at controllers.CategoriaController.createCategoria(CategoriaController.java:42)[0m
-[0m[[0minfo[0m] [0m	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.apply(Routes.scala:393)[0m
-[0m[[0minfo[0m] [0m	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.apply(Routes.scala:393)[0m
-[0m[[0minfo[0m] [0m	at play.core.routing.HandlerInvokerFactory$$anon$5.resultCall(HandlerInvoker.scala:160)[0m
-[0m[[0minfo[0m] [0m	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)[0m
-[0m[[0minfo[0m] [0m	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)[0m
-[0m[[0minfo[0m] [0m	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)[0m
-[0m[[0minfo[0m] [0m	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)[0m
-[0m[[0minfo[0m] [0m	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)[0m
-[0m[[0minfo[0m] [0mCaused by: java.lang.NullPointerException: null[0m
-[0m[[0minfo[0m] [0m	at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:2534)[0m
-[0m[[0minfo[0m] [0m	at play.libs.Json.fromJson(Json.java:85)[0m
-[0m[[0minfo[0m] [0m	at controllers.CategoriaController.createCategoria(CategoriaController.java:42)[0m
-[0m[[0minfo[0m] [0m	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.apply(Routes.scala:393)[0m
-[0m[[0minfo[0m] [0m	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.apply(Routes.scala:393)[0m
-[0m[[0minfo[0m] [0m	at play.core.routing.HandlerInvokerFactory$$anon$5.resultCall(HandlerInvoker.scala:160)[0m
-[0m[[0minfo[0m] [0m	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)[0m
-[0m[[0minfo[0m] [0m	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)[0m
-[0m[[0minfo[0m] [0m	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)[0m
-[0m[[0minfo[0m] [0m	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)[0m
-[0m[[0minfo[0m] [0mJVM exiting, shutting down Play fork run ...[0m
 [0m[[0minfo[0m] [0mStopping Play fork run ...[0m
-[0m[[0minfo[0m] [0mPlay fork run already stopped ...[0m
-[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Stopping application at 2017-04-26T20:54:52.967Z after 392s.[0m
+[0m[[0minfo[0m] [0mapplication - ApplicationTimer demo: Stopping application at 2017-04-27T17:06:53.600Z after 45s.[0m
 [0m[[0minfo[0m] [0mapplication - Shutting down connection pool.[0m
-[0m[[0minfo[0m] [0mForked Play process exited with status: 130[0m
+[0m[[0minfo[0m] [0mJVM exiting, shutting down Play fork run ...[0m
+[0m[[0minfo[0m] [0mPlay fork run already stopped ...[0m
+[0m[[0minfo[0m] [0mForked Play process exited with status: 0[0m

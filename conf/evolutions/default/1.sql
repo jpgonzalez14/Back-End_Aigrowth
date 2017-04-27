@@ -20,6 +20,15 @@ create table plantaentity (
 );
 create sequence Planta;
 
+create table usuarioentity (
+  id                            bigint not null,
+  nombre                        varchar(255),
+  clave                         varchar(255),
+  correo                        varchar(255),
+  constraint pk_usuarioentity primary key (id)
+);
+create sequence Usuario;
+
 alter table plantaentity add constraint fk_plantaentity_categoria_id foreign key (categoria_id) references categoriaentity (id) on delete restrict on update restrict;
 create index ix_plantaentity_categoria_id on plantaentity (categoria_id);
 
@@ -34,4 +43,7 @@ drop sequence if exists Categoria;
 
 drop table if exists plantaentity cascade;
 drop sequence if exists Planta;
+
+drop table if exists usuarioentity cascade;
+drop sequence if exists Usuario;
 

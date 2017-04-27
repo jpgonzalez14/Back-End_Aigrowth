@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/conf/routes
-// @DATE:Wed Apr 26 15:21:57 COT 2017
+// @SOURCE:C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/conf/routes
+// @DATE:Thu Apr 27 21:35:52 GMT+05:00 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -147,6 +147,45 @@ package controllers {
     def message(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "message")
+    }
+  
+  }
+
+  // @LINE:29
+  class ReverseUsuarioController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:29
+    def getUsuarios(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "usuarios")
+    }
+  
+    // @LINE:30
+    def getUsuario(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "usuario/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:33
+    def deleteUsuario(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("DELETE", _prefix + { _defaultPrefix } + "usuario/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:32
+    def updateUsuario(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("PUT", _prefix + { _defaultPrefix } + "usuario/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:31
+    def createUsuario(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "usuario")
     }
   
   }

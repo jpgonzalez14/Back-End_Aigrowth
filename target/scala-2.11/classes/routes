@@ -23,3 +23,11 @@ GET     /categoria/:id              controllers.CategoriaController.getPlanta(id
 POST    /categoria                  controllers.CategoriaController.createCategoria()
 PUT     /categoria/:id              controllers.CategoriaController.updateCategoria(id: Long)
 DELETE  /categoria/:id              controllers.CategoriaController.deleteCategoria(id: Long)
+
+#Controlador de Usuario
+
+GET     /usuarios                   controllers.UsuarioController.getUsuarios()
+GET     /usuario/:id                controllers.UsuarioController.getUsuario(id: Long)
+POST    /usuario                    controllers.UsuarioController.createUsuario()
+PUT     /usuario/:id                controllers.UsuarioController.updateUsuario(id: Long)
+DELETE  /usuario/:id                controllers.UsuarioController.deleteUsuario(id: Long)

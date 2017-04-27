@@ -1,10 +1,10 @@
-2017-04-26 15:48:05,937 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2017-04-26 15:48:06,203 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5433/aigrowthdatabase
-2017-04-26 15:48:06,227 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead
-2017-04-26 15:48:07,249 [ERROR] from org.jdbcdslog.StatementLogger in ForkJoinPool-1-worker-1 - java.sql.Statement.executeQuery: select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%';
-throws exception: org.postgresql.util.PSQLException: ERROR: relation "play_evolutions" does not exist
+2017-04-27 12:05:41,827 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-04-27 12:05:42,439 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5432/aigrowthdatabase
+2017-04-27 12:05:42,528 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead
+2017-04-27 12:05:43,345 [ERROR] from org.jdbcdslog.StatementLogger in ForkJoinPool-1-worker-1 - java.sql.Statement.executeQuery: select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%';
+throws exception: org.postgresql.util.PSQLException: ERROR: no existe la relación «play_evolutions»
   Position: 72
-org.postgresql.util.PSQLException: ERROR: relation "play_evolutions" does not exist
+org.postgresql.util.PSQLException: ERROR: no existe la relación «play_evolutions»
   Position: 72
 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2182)
 	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1911)
@@ -19,7 +19,7 @@ org.postgresql.util.PSQLException: ERROR: relation "play_evolutions" does not ex
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.jdbcdslog.StatementLoggingHandler.invoke(StatementLoggingHandler.java:27)
-	at com.sun.proxy.$Proxy30.executeQuery(Unknown Source)
+	at com.sun.proxy.$Proxy26.executeQuery(Unknown Source)
 	at play.api.db.evolutions.DatabaseEvolutions.executeQuery(EvolutionsApi.scala:305)
 	at play.api.db.evolutions.DatabaseEvolutions.checkEvolutionsState(EvolutionsApi.scala:260)
 	at play.api.db.evolutions.DatabaseEvolutions.databaseEvolutions(EvolutionsApi.scala:127)
@@ -75,16 +75,16 @@ org.postgresql.util.PSQLException: ERROR: relation "play_evolutions" does not ex
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-04-26 15:48:07,553 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-04-26T20:48:07.552Z
-2017-04-26 15:48:08,894 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Stopping application at 2017-04-26T20:48:08.894Z after 1s.
-2017-04-26 15:48:08,900 [INFO] from application in ForkJoinPool-1-worker-1 - Shutting down connection pool.
-2017-04-26 15:48:09,127 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2017-04-26 15:48:09,149 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5433/aigrowthdatabase
-2017-04-26 15:48:09,218 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead
-2017-04-26 15:48:09,239 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-04-26T20:48:09.238Z
-2017-04-26 15:48:09,299 [ERROR] from application in netty-event-loop-3 - 
+2017-04-27 12:05:43,502 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-04-27T17:05:43.501Z
+2017-04-27 12:05:45,141 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Stopping application at 2017-04-27T17:05:45.141Z after 2s.
+2017-04-27 12:05:45,146 [INFO] from application in ForkJoinPool-1-worker-1 - Shutting down connection pool.
+2017-04-27 12:05:45,449 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-04-27 12:05:45,935 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:postgresql://localhost:5432/aigrowthdatabase
+2017-04-27 12:05:45,936 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead
+2017-04-27 12:05:46,175 [INFO] from application in ForkJoinPool-1-worker-1 - ApplicationTimer demo: Starting application at 2017-04-27T17:05:46.175Z
+2017-04-27 12:05:46,223 [ERROR] from application in netty-event-loop-3 - 
 
-! @73nl0d9do - Internal server error, for (GET) [/plantas] ->
+! @73o149po3 - Internal server error, for (GET) [/] ->
  
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.ApplicationEvolutions$$anonfun$play$api$db$evolutions$ApplicationEvolutions$$runEvolutions$1.apply$mcV$sp(ApplicationEvolutions.scala:77)
@@ -136,122 +136,12 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
-2017-04-26 15:48:19,629 [INFO] from application in ForkJoinPool-1-worker-2 - ApplicationTimer demo: Stopping application at 2017-04-26T20:48:19.629Z after 10s.
-2017-04-26 15:48:19,630 [INFO] from application in ForkJoinPool-1-worker-2 - Shutting down connection pool.
-2017-04-26 15:48:20,249 [INFO] from application in ForkJoinPool-1-worker-2 - Creating Pool for datasource 'default'
-2017-04-26 15:48:20,266 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-2 - Database [default] connected at jdbc:postgresql://localhost:5433/aigrowthdatabase
-2017-04-26 15:48:20,274 [WARN] from application in ForkJoinPool-1-worker-2 - application.conf @ file:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead
-2017-04-26 15:48:20,336 [INFO] from application in ForkJoinPool-1-worker-2 - ApplicationTimer demo: Starting application at 2017-04-26T20:48:20.336Z
-2017-04-26 15:48:20,594 [INFO] from play.api.Play in ForkJoinPool-1-worker-2 - Application started (Dev)
-2017-04-26 15:51:26,813 [ERROR] from application in application-akka.actor.default-dispatcher-10 - 
-
-! @73nl0ofl0 - Internal server error, for (POST) [/categoria] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[CompletionException: java.lang.RuntimeException: java.lang.NullPointerException]]
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
-	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
-	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
-	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
-	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$class.complete(Promise.scala:55)
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153)
-	at scala.concurrent.Future$$anonfun$recoverWith$1$$anonfun$apply$6.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1$$anonfun$apply$6.apply(Future.scala:344)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.scala$concurrent$impl$Promise$DefaultPromise$$dispatchOrAddCallback(Promise.scala:280)
-	at scala.concurrent.impl.Promise$DefaultPromise.onComplete(Promise.scala:270)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344)
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-Caused by: java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.NullPointerException
-	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
-	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
-	at java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:593)
-	at java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:577)
-	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
-	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1977)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:21)
-	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:18)
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.processBatch$1(BatchingExecutor.scala:63)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:78)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BatchingExecutor$Batch$$anonfun$run$1.apply(BatchingExecutor.scala:55)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
-	at scala.concurrent.BatchingExecutor$Batch.run(BatchingExecutor.scala:54)
-	at scala.concurrent.Future$InternalCallbackExecutor$.unbatchedExecute(Future.scala:599)
-	at scala.concurrent.BatchingExecutor$class.execute(BatchingExecutor.scala:106)
-	at scala.concurrent.Future$InternalCallbackExecutor$.execute(Future.scala:597)
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248)
-	at scala.concurrent.Promise$class.tryFailure(Promise.scala:112)
-	at scala.concurrent.impl.Promise$DefaultPromise.tryFailure(Promise.scala:153)
-	at play.api.mvc.Filter$$anon$1$$anonfun$apply$4$$anonfun$apply$1.applyOrElse(Filters.scala:83)
-	at play.api.mvc.Filter$$anon$1$$anonfun$apply$4$$anonfun$apply$1.applyOrElse(Filters.scala:77)
-	... 15 common frames omitted
-Caused by: java.lang.RuntimeException: java.lang.NullPointerException
-	at play.libs.Json.fromJson(Json.java:87)
-	at controllers.CategoriaController.createCategoria(CategoriaController.java:42)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.apply(Routes.scala:393)
-	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$12$$anonfun$apply$12.apply(Routes.scala:393)
-	at play.core.routing.HandlerInvokerFactory$$anon$5.resultCall(HandlerInvoker.scala:160)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
-	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
-	at scala.concurrent.impl.Future$.apply(Future.scala:31)
-	at scala.concurrent.Future$.apply(Future.scala:492)
-	at play.core.j.JavaAction.apply(JavaAction.scala:108)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
-	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
-	at scala.Option.map(Option.scala:146)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
-	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249)
-	... 13 common frames omitted
-Caused by: java.lang.NullPointerException: null
-	at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:2534)
-	at play.libs.Json.fromJson(Json.java:85)
-	... 40 common frames omitted
-2017-04-26 15:54:52,967 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-12 - ApplicationTimer demo: Stopping application at 2017-04-26T20:54:52.967Z after 392s.
-2017-04-26 15:54:52,968 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-12 - Shutting down connection pool.
+2017-04-27 12:06:07,773 [INFO] from application in ForkJoinPool-1-worker-2 - ApplicationTimer demo: Stopping application at 2017-04-27T17:06:07.773Z after 21s.
+2017-04-27 12:06:07,773 [INFO] from application in ForkJoinPool-1-worker-2 - Shutting down connection pool.
+2017-04-27 12:06:07,905 [INFO] from application in ForkJoinPool-1-worker-2 - Creating Pool for datasource 'default'
+2017-04-27 12:06:08,379 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-2 - Database [default] connected at jdbc:postgresql://localhost:5432/aigrowthdatabase
+2017-04-27 12:06:08,435 [WARN] from application in ForkJoinPool-1-worker-2 - application.conf @ file:/C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/target/scala-2.11/classes/application.conf: 375: applyEvolutions.defoult is deprecated, use play.evolutions.db.defoult.autoApply instead
+2017-04-27 12:06:08,621 [INFO] from application in ForkJoinPool-1-worker-2 - ApplicationTimer demo: Starting application at 2017-04-27T17:06:08.621Z
+2017-04-27 12:06:08,761 [INFO] from play.api.Play in ForkJoinPool-1-worker-2 - Application started (Dev)
+2017-04-27 12:06:53,600 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-15 - ApplicationTimer demo: Stopping application at 2017-04-27T17:06:53.600Z after 45s.
+2017-04-27 12:06:53,601 [INFO] from application in play-fork-run-akka.actor.default-dispatcher-15 - Shutting down connection pool.

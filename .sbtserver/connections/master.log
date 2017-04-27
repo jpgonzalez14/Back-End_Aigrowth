@@ -1,0 +1,7 @@
+New log file opened at Thu Apr 27 12:05:06 COT 2017 by 8048@ISIS2503-0151
+Taking next connection to: 57617
+New client attempting to connect on port: 57618-57617
+  Address = /172.24.42.81:57617
+This client on port 57618 has uuid f21f9e68-a242-4512-a6c9-41148db028d9 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-f21f9e68-a242-4512-a6c9-41148db028d9
+Taking next connection to: 57617

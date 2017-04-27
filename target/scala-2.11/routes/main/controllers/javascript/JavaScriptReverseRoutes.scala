@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/backaigrowth/conf/routes
-// @DATE:Wed Apr 26 15:21:57 COT 2017
+// @SOURCE:C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/conf/routes
+// @DATE:Thu Apr 27 21:35:52 GMT+05:00 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -209,6 +209,66 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "message"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:29
+  class ReverseUsuarioController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:29
+    def getUsuarios: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UsuarioController.getUsuarios",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "usuarios"})
+        }
+      """
+    )
+  
+    // @LINE:30
+    def getUsuario: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UsuarioController.getUsuario",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "usuario/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:33
+    def deleteUsuario: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UsuarioController.deleteUsuario",
+      """
+        function(id0) {
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "usuario/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:32
+    def updateUsuario: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UsuarioController.updateUsuario",
+      """
+        function(id0) {
+          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "usuario/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:31
+    def createUsuario: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UsuarioController.createUsuario",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "usuario"})
         }
       """
     )
