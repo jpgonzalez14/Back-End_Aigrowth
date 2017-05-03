@@ -27,6 +27,12 @@ public class PlantaEntity extends Model{
     @JsonBackReference
     private CategoriaEntity categoria;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    private TablaDeCrecimientoEntity tabla;
+
+    @OneToMany(mappedBy = "planta")
+    private ReporteEntity reporte;
+
     public PlantaEntity()
     {
         this.id=null;

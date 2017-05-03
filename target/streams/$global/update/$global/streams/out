@@ -1,4 +1,4 @@
-[info] Updating {file:/C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/}root...
+[info] Updating {file:/Users/Sofia/Documents/Back-End_Aigrowth/}root...
 [debug] :: resolving dependencies :: backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run]
 [debug] 	validate = true
@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT [compile]
 [debug] == resolving dependencies backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20e9dd85
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f1686d
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 [debug] 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -57,7 +57,7 @@
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.1 in sbt-chain
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime(*)]
@@ -82,7 +82,6 @@
 [debug] == resolving dependencies backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT->com.typesafe.play#play-ebean_2.11;3.0.2 [compile->compile]
 [debug] == resolving dependencies com.typesafe.play#play-ebean_2.11;3.0.2->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-ebean_2.11;3.0.2->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play-ebean_2.11;3.0.2->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
 [debug] == resolving dependencies com.typesafe.play#play-ebean_2.11;3.0.2->com.typesafe.play#play-java-jdbc_2.11;2.5.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-ebean_2.11;3.0.2->com.typesafe.play#play-java-jdbc_2.11;2.5.2 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-ebean_2.11;3.0.2->com.typesafe.play#play-jdbc-evolutions_2.11;2.5.2 [compile->master(compile)]
@@ -155,19 +154,16 @@
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.slf4j#slf4j-api;[1.7.1,1.7.99) {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] default-cache: cached resolved revision expired for org.slf4j#slf4j-api;[1.7.1,1.7.99)
 [debug] default-cache: cached resolved revision expired for org.slf4j#slf4j-api;[1.7.1,1.7.99)
-[debug] 		tried C:\Users\aj.paredes10\.ivy2\local\org.slf4j\slf4j-api\[revision]\ivys\ivy.xml
+[debug] 		tried /Users/Sofia/.ivy2/local/org.slf4j/slf4j-api/[revision]/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.slf4j#slf4j-api;[1.7.1,1.7.99)
 [debug] default-cache: cached resolved revision expired for org.slf4j#slf4j-api;[1.7.1,1.7.99)
-[debug] 		tried C:\Users\aj.paredes10\.activator\repository\org.slf4j\slf4j-api\[revision]\ivys\ivy.xml
-[debug] 	activator-launcher-local: no ivy file found for org.slf4j#slf4j-api;[1.7.1,1.7.99)
-[debug] default-cache: cached resolved revision expired for org.slf4j#slf4j-api;[1.7.1,1.7.99)
-[debug] 		tried C:\ISIS2503\play-activator\repository\org.slf4j\slf4j-api\[revision]\ivys\ivy.xml
-[debug] activator-local do not support transaction. ivy pattern does not use revision as a directory
-[debug] 	activator-local: found md file for org.slf4j#slf4j-api;[1.7.1,1.7.99)
-[debug] 		=> C:\ISIS2503\play-activator\repository\org.slf4j\slf4j-api\1.7.21\ivys\ivy.xml (1.7.21)
-[debug] 	default-cache: revision in cache: org.slf4j#slf4j-api;1.7.21
-[debug] 	found org.slf4j#slf4j-api;1.7.21 in sbt-chain
-[debug] 	[1.7.21] org.slf4j#slf4j-api;[1.7.1,1.7.99)
+[debug] 		tried https://repo1.maven.org/maven2/org/slf4j/slf4j-api/[revision]/slf4j-api-[revision].pom
+[debug] 	listing revisions from maven-metadata: https://repo1.maven.org/maven2/org/slf4j/slf4j-api/maven-metadata.xml
+[debug] 	public: found md file for org.slf4j#slf4j-api;[1.7.1,1.7.99)
+[debug] 		=> https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom (1.7.25)
+[debug] 	default-cache: revision in cache: org.slf4j#slf4j-api;1.7.25
+[debug] 	found org.slf4j#slf4j-api;1.7.25 in sbt-chain
+[debug] 	[1.7.25] org.slf4j#slf4j-api;[1.7.1,1.7.99)
 [debug] == resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm;7.6.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm;7.6.1->com.fasterxml.jackson.core#jackson-core;2.6.5 [compile->master(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.6.5 ...
@@ -395,7 +391,9 @@
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#play-netty-utils;2.5.10
 [debug] 	found com.typesafe.play#play-netty-utils;2.5.10 in sbt-chain
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [info] Resolving org.slf4j#jul-to-slf4j;1.7.21 ...
@@ -403,7 +401,9 @@
 [debug] sbt-chain: module revision found in cache: org.slf4j#jul-to-slf4j;1.7.21
 [debug] 	found org.slf4j#jul-to-slf4j;1.7.21 in sbt-chain
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
 [info] Resolving org.slf4j#jcl-over-slf4j;1.7.21 ...
@@ -411,7 +411,9 @@
 [debug] sbt-chain: module revision found in cache: org.slf4j#jcl-over-slf4j;1.7.21
 [debug] 	found org.slf4j#jcl-over-slf4j;1.7.21 in sbt-chain
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->master(compile)]
 [info] Resolving com.typesafe.play#play-streams_2.11;2.5.10 ...
@@ -490,7 +492,9 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
@@ -512,7 +516,6 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->master(compile)]
@@ -564,48 +567,18 @@
 [debug] 	found com.google.inject#guice;4.0 in sbt-chain
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [info] Resolving javax.inject#javax.inject;1 ...
 [debug] sbt-chain: Checking cache for: dependency: javax.inject#javax.inject;1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] sbt-chain: module revision found in cache: javax.inject#javax.inject;1
 [debug] 	found javax.inject#javax.inject;1 in sbt-chain
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [info] Resolving aopalliance#aopalliance;1.0 ...
 [debug] sbt-chain: Checking cache for: dependency: aopalliance#aopalliance;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] sbt-chain: module revision found in cache: aopalliance#aopalliance;1.0
 [debug] 	found aopalliance#aopalliance;1.0 in sbt-chain
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [info] Resolving com.google.guava#guava;16.0.1 ...
 [debug] sbt-chain: Checking cache for: dependency: com.google.guava#guava;16.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] sbt-chain: module revision found in cache: com.google.guava#guava;16.0.1
@@ -682,14 +655,17 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [runtime->runtime(*)]
@@ -735,6 +711,7 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
@@ -1223,7 +1200,9 @@
 [debug] sbt-chain: module revision found in cache: com.zaxxer#HikariCP;2.5.1
 [debug] 	found com.zaxxer#HikariCP;2.5.1 in sbt-chain
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->compile(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->master(compile)]
 [info] Resolving com.googlecode.usc#jdbcdslog;1.0.6.2 ...
@@ -1263,6 +1242,7 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->compile]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [runtime->runtime(*)]
@@ -1375,7 +1355,9 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)]
 [info] Resolving org.asynchttpclient#netty-codec-dns;2.0.11 ...
@@ -1387,13 +1369,17 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)]
@@ -1409,7 +1395,9 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->org.asynchttpclient#async-http-client;2.0.11 [compile->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->org.asynchttpclient#async-http-client;2.0.11 [compile->compile]
@@ -1426,6 +1414,7 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [runtime->runtime(*)]
@@ -1433,11 +1422,13 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [runtime->runtime(*)]
@@ -1447,6 +1438,7 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->master(compile)]
@@ -1602,7 +1594,7 @@
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
@@ -1703,16 +1695,20 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[info] Resolving org.slf4j#slf4j-api;1.7.21 ...
+[debug] sbt-chain: Checking cache for: dependency: org.slf4j#slf4j-api;1.7.21 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.21
+[debug] 	found org.slf4j#slf4j-api;1.7.21 in sbt-chain
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
@@ -1760,8 +1756,8 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
@@ -1777,9 +1773,9 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-annotations;2.7.8 [compile->master(compile)]
@@ -1809,22 +1805,10 @@
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->compile(*)]
@@ -1843,19 +1827,19 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(compile)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->compile(*)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->compile(*)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->master(compile)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->tyrex#tyrex;1.0.1 [compile->master(compile)]
@@ -2046,14 +2030,17 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [runtime->runtime(*)]
@@ -2099,6 +2086,7 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
@@ -2172,6 +2160,7 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->compile]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [runtime->runtime(*)]
@@ -2471,7 +2460,9 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)]
@@ -2479,13 +2470,17 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)]
@@ -2495,7 +2490,9 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
@@ -2556,6 +2553,7 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [runtime->runtime(*)]
@@ -2563,11 +2561,13 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [runtime->runtime(*)]
@@ -2577,6 +2577,7 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
@@ -2649,7 +2650,7 @@
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
@@ -2750,16 +2751,16 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
@@ -2807,8 +2808,8 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
@@ -2824,9 +2825,9 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-annotations;2.7.8 [compile->master(compile)]
@@ -2856,22 +2857,10 @@
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->compile(*)]
@@ -2890,19 +2879,19 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(compile)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->compile(*)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->compile(*)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->master(compile)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->tyrex#tyrex;1.0.1 [compile->master(compile)]
@@ -3093,14 +3082,17 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [runtime->runtime(*)]
@@ -3146,6 +3138,7 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
@@ -3219,6 +3212,7 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->compile]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [runtime->runtime(*)]
@@ -3518,7 +3512,9 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)]
@@ -3526,13 +3522,17 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)]
@@ -3542,7 +3542,9 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
@@ -3603,6 +3605,7 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [runtime->runtime(*)]
@@ -3610,11 +3613,13 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [runtime->runtime(*)]
@@ -3624,6 +3629,7 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
@@ -4220,7 +4226,7 @@
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
@@ -4321,16 +4327,16 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
@@ -4378,8 +4384,8 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
@@ -4395,9 +4401,9 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-annotations;2.7.8 [compile->master(compile)]
@@ -4427,22 +4433,10 @@
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->compile(*)]
@@ -4461,19 +4455,19 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(compile)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->compile(*)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->compile(*)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->master(compile)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->tyrex#tyrex;1.0.1 [compile->master(compile)]
@@ -4664,14 +4658,17 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [runtime->runtime(*)]
@@ -4717,6 +4714,7 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
@@ -4790,6 +4788,7 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->compile]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [runtime->runtime(*)]
@@ -5089,7 +5088,9 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)]
@@ -5097,13 +5098,17 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)]
@@ -5113,7 +5118,9 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
@@ -5174,6 +5181,7 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [runtime->runtime(*)]
@@ -5181,11 +5189,13 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [runtime->runtime(*)]
@@ -5195,6 +5205,7 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
@@ -5269,7 +5280,7 @@
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
@@ -5370,16 +5381,16 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
@@ -5427,8 +5438,8 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
@@ -5444,9 +5455,9 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-annotations;2.7.8 [compile->master(compile)]
@@ -5476,22 +5487,10 @@
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->compile(*)]
@@ -5510,19 +5509,19 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(compile)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->compile(*)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->compile(*)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->master(compile)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->tyrex#tyrex;1.0.1 [compile->master(compile)]
@@ -5713,14 +5712,17 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [runtime->runtime(*)]
@@ -5766,6 +5768,7 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
@@ -5839,6 +5842,7 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->compile]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [runtime->runtime(*)]
@@ -6138,7 +6142,9 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)]
@@ -6146,13 +6152,17 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)]
@@ -6162,7 +6172,9 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
@@ -6223,6 +6235,7 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [runtime->runtime(*)]
@@ -6230,11 +6243,13 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [runtime->runtime(*)]
@@ -6244,6 +6259,7 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
@@ -6318,7 +6334,7 @@
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
@@ -6419,16 +6435,16 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
@@ -6476,8 +6492,8 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
@@ -6493,9 +6509,9 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-annotations;2.7.8 [compile->master(compile)]
@@ -6525,22 +6541,10 @@
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->compile(*)]
@@ -6559,19 +6563,19 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;15.0 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->master(compile)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)]
-[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [compile->compile(*)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [compile->compile(*)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->master(compile)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.usc#jdbcdslog;1.0.6.2->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.h2database#h2;1.4.192 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->tyrex#tyrex;1.0.1 [compile->master(compile)]
@@ -6762,14 +6766,17 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [runtime->runtime(*)]
@@ -6815,6 +6822,7 @@
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#twirl-api_2.11;1.1.1 [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
@@ -6888,6 +6896,7 @@
 [debug] == resolving dependencies com.jolbox#bonecp;0.8.0.RELEASE->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.zaxxer#HikariCP;2.5.1 [runtime->compile]
+[debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP;2.5.1->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-jdbc_2.11;2.5.10->com.googlecode.usc#jdbcdslog;1.0.6.2 [runtime->runtime(*)]
@@ -7187,7 +7196,9 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [compile->compile(*)]
@@ -7195,13 +7206,17 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [compile->compile(*)]
@@ -7211,7 +7226,9 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [compile->compile(*)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [compile->compile(*)]
@@ -7272,6 +7289,7 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->io.netty#netty-common;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.asynchttpclient#netty-codec-dns;2.0.11 [runtime->runtime(*)]
@@ -7279,11 +7297,13 @@
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->io.netty#netty-codec;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-codec-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.39.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->io.netty#netty-transport;4.0.41.Final [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#netty-resolver-dns;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.reactivestreams#reactive-streams;1.0.0 [runtime->runtime(*)]
@@ -7293,6 +7313,7 @@
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->com.typesafe.netty#netty-reactive-streams;1.0.8 [runtime->compile]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.javassist#javassist;3.20.0-GA [runtime->compile]
+[debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
 [debug] == resolving dependencies org.asynchttpclient#async-http-client;2.0.11->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-ws_2.11;2.5.10->oauth.signpost#signpost-core;1.2.1.2 [runtime->runtime(*)]
@@ -7780,16 +7801,16 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->compile(*)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
@@ -7845,11 +7866,11 @@
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#twirl-api_2.11;1.1.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [compile->master(compile)]
@@ -7865,9 +7886,9 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->master(compile)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [compile->compile(*)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-annotations;2.7.8 [compile->master(compile)]
@@ -7897,34 +7918,10 @@
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject#guice;4.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->javax.inject#javax.inject;1 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->aopalliance#aopalliance;1.0 [compile->compile(*)]
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->master(compile)]
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
-[debug] dependency descriptor has been mediated: dependency: com.google.guava#guava;19.0 {test=[runtime(*), master(compile)]} => dependency: com.google.guava#guava;16.0.1 {test=[runtime(*), master(compile)]}
 [debug] == resolving dependencies com.google.inject#guice;4.0->com.google.guava#guava;16.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->master(compile)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.google.inject.extensions#guice-assistedinject;4.0 [compile->compile(*)]
@@ -8114,16 +8111,16 @@
 [debug] == resolving dependencies com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.7.8->com.fasterxml.jackson.core#jackson-databind;2.7.8 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-netty-utils;2.5.10 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
+[debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->compile]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
-[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
+[debug] == resolving dependencies org.slf4j#jul-to-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play-netty-utils;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->compile]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
-[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
+[debug] == resolving dependencies org.slf4j#jcl-over-slf4j;1.7.21->org.slf4j#slf4j-api;1.7.21 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.typesafe.play#play-streams_2.11;2.5.10 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play-streams_2.11;2.5.10->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
@@ -8177,8 +8174,8 @@
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
+[debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#slf4j-api;1.7.21 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jul-to-slf4j;1.7.21 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->org.slf4j#jcl-over-slf4j;1.7.21 [runtime->runtime(*)]
@@ -8193,8 +8190,8 @@
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->com.typesafe.akka#akka-actor_2.11;2.4.12 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.16 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;[1.7.1,1.7.99) [runtime->compile]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [runtime->runtime(*)]
+[debug] == resolving dependencies com.typesafe.akka#akka-slf4j_2.11;2.4.12->org.slf4j#slf4j-api;1.7.21 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [runtime->runtime(*)]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-core;2.7.8 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#play_2.11;2.5.10->com.fasterxml.jackson.core#jackson-annotations;2.7.8 [runtime->runtime(*)]
@@ -8443,7 +8440,7 @@
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.3
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.3 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->master(compile)]
@@ -8452,7 +8449,7 @@
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->master(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->master(compile)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
 [debug] == resolving dependencies com.typesafe.play#twirl-compiler_2.11;1.1.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
@@ -8839,13 +8836,14 @@
 [debug] 	[NOT REQUIRED] org.avaje.ebeanorm#avaje-ebeanorm-cluster;1.1.1!avaje-ebeanorm-cluster.jar
 [debug] 	[NOT REQUIRED] org.avaje#avaje-classpath-scanner-api;2.1!avaje-classpath-scanner-api.jar
 [debug] 	[NOT REQUIRED] org.avaje#avaje-classpath-scanner;2.1.1!avaje-classpath-scanner.jar
-[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.21!slf4j-api.jar
+[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play_2.11;2.5.10!play_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-iteratees_2.11;2.5.10!play-iteratees_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#build-link;2.5.10!build-link.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-json_2.11;2.5.10!play-json_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-netty-utils;2.5.10!play-netty-utils.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-streams_2.11;2.5.10!play-streams_2.11.jar
+[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.21!slf4j-api.jar
 [debug] 	[NOT REQUIRED] org.slf4j#jul-to-slf4j;1.7.21!jul-to-slf4j.jar
 [debug] 	[NOT REQUIRED] org.slf4j#jcl-over-slf4j;1.7.21!jcl-over-slf4j.jar
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.4.12!akka-actor_2.11.jar
@@ -9002,20 +9000,20 @@
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
-[debug] :: resolution report :: resolve 3605ms :: artifacts dl 188ms
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT compile produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-compile.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT runtime produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-runtime.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT test produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-test.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT provided produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-provided.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT optional produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-optional.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT compile-internal produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-compile-internal.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT runtime-internal produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-runtime-internal.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT test-internal produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-test-internal.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT plugin produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-plugin.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT sources produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-sources.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT docs produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-docs.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT pom produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-pom.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT scala-tool produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-scala-tool.xml
-[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT fork-run produced in C:\Users\aj.paredes10\Documents\pmc\Back-End_Aigrowth\target\resolution-cache\reports\backaigrowth-backaigrowth_2.11-fork-run.xml
-[debug] 	resolve done (3605ms resolve - 188ms download)
+[debug] :: resolution report :: resolve 22753ms :: artifacts dl 142ms
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT compile produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-compile.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT runtime produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-runtime.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT test produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-test.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT provided produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-provided.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT optional produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-optional.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT compile-internal produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-compile-internal.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-runtime-internal.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT test-internal produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-test-internal.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT plugin produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-plugin.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT sources produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-sources.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT docs produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-docs.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT pom produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-pom.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT scala-tool produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-scala-tool.xml
+[debug] 	report for backaigrowth#backaigrowth_2.11;1.0-SNAPSHOT fork-run produced in /Users/Sofia/Documents/Back-End_Aigrowth/target/resolution-cache/reports/backaigrowth-backaigrowth_2.11-fork-run.xml
+[debug] 	resolve done (22753ms resolve - 142ms download)
 [info] Done updating.

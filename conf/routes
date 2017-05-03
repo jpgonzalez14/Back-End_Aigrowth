@@ -31,3 +31,11 @@ GET     /usuario/:id                controllers.UsuarioController.getUsuario(id:
 POST    /usuario                    controllers.UsuarioController.createUsuario()
 PUT     /usuario/:id                controllers.UsuarioController.updateUsuario(id: Long)
 DELETE  /usuario/:id                controllers.UsuarioController.deleteUsuario(id: Long)
+
+#Rutas de la tabla de crecimiento
+
+GET     /tablas                     controllers.TablaDeCrecimientoController.getTablas()
+GET     /tabla/:id                  controllers.TablaDeCrecimientoController.getTabla(id: Long)
+POST    /tabla                      controllers.TablaDeCrecimientoController.createTabla()
+PUT     /tabla/:id                  controllers.TablaDeCrecimientoController.updateTabla(id: Long)
+DELETE  /tabla/:id                  controllers.TablaDeCrecimientoController.deleteTabla(id: Long)
