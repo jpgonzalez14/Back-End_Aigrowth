@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/conf/routes
-// @DATE:Thu Apr 27 21:35:52 GMT+05:00 2017
+// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/routes
+// @DATE:Wed May 03 16:14:19 COT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -12,6 +12,45 @@ import _root_.play.libs.F
 
 // @LINE:6
 package controllers {
+
+  // @LINE:37
+  class ReverseTablaDeCrecimientoController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:39
+    def createTabla(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "tabla")
+    }
+  
+    // @LINE:41
+    def deleteTabla(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("DELETE", _prefix + { _defaultPrefix } + "tabla/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:40
+    def updateTabla(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("PUT", _prefix + { _defaultPrefix } + "tabla/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:37
+    def getTablas(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "tablas")
+    }
+  
+    // @LINE:38
+    def getTabla(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "tabla/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+  }
 
   // @LINE:13
   class ReverseAssets(_prefix: => String) {

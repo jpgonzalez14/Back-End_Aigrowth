@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/conf/routes
-// @DATE:Thu Apr 27 21:35:52 GMT+05:00 2017
+// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/routes
+// @DATE:Wed May 03 16:14:19 COT 2017
 
 package controllers;
 
@@ -9,6 +9,7 @@ import router.RoutesPrefix;
 
 public class routes {
   
+  public static final controllers.ReverseTablaDeCrecimientoController TablaDeCrecimientoController = new controllers.ReverseTablaDeCrecimientoController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseCategoriaController CategoriaController = new controllers.ReverseCategoriaController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseCountController CountController = new controllers.ReverseCountController(RoutesPrefix.byNamePrefix());
@@ -19,6 +20,7 @@ public class routes {
 
   public static class javascript {
     
+    public static final controllers.javascript.ReverseTablaDeCrecimientoController TablaDeCrecimientoController = new controllers.javascript.ReverseTablaDeCrecimientoController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseAssets Assets = new controllers.javascript.ReverseAssets(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseCategoriaController CategoriaController = new controllers.javascript.ReverseCategoriaController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseCountController CountController = new controllers.javascript.ReverseCountController(RoutesPrefix.byNamePrefix());

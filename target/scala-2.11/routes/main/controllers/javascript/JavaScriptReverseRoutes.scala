@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/aj.paredes10/Documents/pmc/Back-End_Aigrowth/conf/routes
-// @DATE:Thu Apr 27 21:35:52 GMT+05:00 2017
+// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/routes
+// @DATE:Wed May 03 16:14:19 COT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -14,6 +14,66 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
   import ReverseRouteContext.empty
+
+  // @LINE:37
+  class ReverseTablaDeCrecimientoController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:39
+    def createTabla: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaDeCrecimientoController.createTabla",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "tabla"})
+        }
+      """
+    )
+  
+    // @LINE:41
+    def deleteTabla: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaDeCrecimientoController.deleteTabla",
+      """
+        function(id0) {
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "tabla/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:40
+    def updateTabla: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaDeCrecimientoController.updateTabla",
+      """
+        function(id0) {
+          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "tabla/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:37
+    def getTablas: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaDeCrecimientoController.getTablas",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "tablas"})
+        }
+      """
+    )
+  
+    // @LINE:38
+    def getTabla: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaDeCrecimientoController.getTabla",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "tabla/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+  }
 
   // @LINE:13
   class ReverseAssets(_prefix: => String) {
