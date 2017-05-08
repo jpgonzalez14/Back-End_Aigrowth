@@ -1,3 +1,7 @@
+[0m[[0mdebug[0m] [0mInvalidating /Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/models/ReporteEntity.class: stamp changed from lastModified(1494260135000) to lastModified(1494260138000)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/models/UsuarioEntity.class: stamp changed from lastModified(1494260135000) to lastModified(1494260139000)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/models/PlantaEntity.class: stamp changed from lastModified(1494260135000) to lastModified(1494260138000)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/models/TablaDeCrecimientoEntity.class: stamp changed from lastModified(1494260135000) to lastModified(1494260138000)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
@@ -5,11 +9,22 @@
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
-[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set(/Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/models/ReporteEntity.class, /Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/models/UsuarioEntity.class, /Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/models/PlantaEntity.class, /Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/models/TablaDeCrecimientoEntity.class)[0m
 [0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
-[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set(/Users/Sofia/Documents/Back-End_Aigrowth/app/controllers/SensorController.java, /Users/Sofia/Documents/Back-End_Aigrowth/app/models/HuertaEntity.java, /Users/Sofia/Documents/Back-End_Aigrowth/app/models/SensorEntity.java)[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/Sofia/Documents/Back-End_Aigrowth/app/controllers/SensorController.java, /Users/Sofia/Documents/Back-End_Aigrowth/app/models/HuertaEntity.java, /Users/Sofia/Documents/Back-End_Aigrowth/app/models/SensorEntity.java)[0m
+[0m[[0minfo[0m] [0mCompiling 3 Java sources to /Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@3967610d directly...[0m
+[0m[[0mdebug[0m] [0mJava compilation took 3.344579943 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.764093806 s[0m
+[0m[[0mdebug[0m] [0mJava compile + analysis took 4.128845159 s[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

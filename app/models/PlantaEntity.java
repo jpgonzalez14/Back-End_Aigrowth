@@ -5,6 +5,8 @@ import com.avaje.ebean.Model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by jp.gonzalez14 on 24/04/17.
@@ -30,8 +32,11 @@ public class PlantaEntity extends Model{
     @OneToOne(cascade = CascadeType.ALL)
     private TablaDeCrecimientoEntity tabla;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    private SensorEntity sensor;
+
     @OneToMany(mappedBy = "planta")
-    private ReporteEntity reporte;
+    private List<ReporteEntity> reportes = new ArrayList<ReporteEntity>();
 
     public PlantaEntity()
     {
@@ -41,6 +46,20 @@ public class PlantaEntity extends Model{
         this.descripcion = "NO NAME";
 
     }
+
+    public void addToReportes(ReporteEntity r)
+    {
+        reportes.add(r);
+    }
+
+    public SensorEntity getSensor() {
+        return sensor;
+    }
+
+    public void setSensor(SensorEntity sensor) {
+        this.sensor = sensor;
+    }
+
     public PlantaEntity(Long id) {
         this();
         this.id = id;
@@ -94,4 +113,11 @@ public class PlantaEntity extends Model{
         return categoria;
     }
 
+    public TablaDeCrecimientoEntity getTabla() {
+        return tabla;
+    }
+
+    public void setTabla(TablaDeCrecimientoEntity tabla) {
+        this.tabla = tabla;
+    }
 }

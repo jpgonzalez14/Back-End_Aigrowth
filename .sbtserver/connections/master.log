@@ -1,0 +1,7 @@
+New log file opened at Mon May 08 11:17:08 COT 2017 by 39302@MacBook-Pro-de-SOFIA.local
+Taking next connection to: 64919
+New client attempting to connect on port: 64942-64919
+  Address = /192.168.0.13:64919
+This client on port 64942 has uuid 02629938-5bff-44a6-937a-8b4c2c183c42 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-02629938-5bff-44a6-937a-8b4c2c183c42
+Taking next connection to: 64919

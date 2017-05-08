@@ -1,14 +1,16 @@
 package controllers;
 
 import akka.dispatch.MessageDispatcher;
+import com.avaje.ebean.QueryEachConsumer;
 import com.fasterxml.jackson.databind.JsonNode;
 import dispatchers.AkkaDispatcher;
 import models.TablaDeCrecimientoEntity;
+import models.TablaEstaticaEntity;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-//import sun.tools.jconsole.Tab;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
@@ -39,14 +41,33 @@ public class TablaDeCrecimientoController extends Controller
                 );
     }
 
-    public CompletionStage<Result> createTabla()
+    public CompletionStage<Result> createTabla(Long idPlanta)
     {
         MessageDispatcher jdbcDispatcher = AkkaDispatcher.jdbcDispatcher;
         JsonNode n = request().body().asJson();
 
+        System.out.println("Creando tabla de crecimiento");
         TablaDeCrecimientoEntity tabla = Json.fromJson( n ,TablaDeCrecimientoEntity.class ) ;
         return CompletableFuture.supplyAsync(
-                ()->{
+                ()->
+                {
+                    String categoria = tabla.getTipoPlanta();
+                    List<TablaEstaticaEntity> infoBasicaList = TablaEstaticaEntity.FINDER.all();
+                    TablaEstaticaEntity infoBasica = null;
+                    for (int i = 0; i < infoBasicaList.size(); i++)
+                    {
+                        if(infoBasicaList.get(i).getTipoPlanta().equals(categoria)){
+                            infoBasica = infoBasicaList.get(i);
+                        }
+                    }
+
+                    if(infoBasica != null)
+                    {
+                        tabla.setRangoInferiorEC(infoBasica.getRangoInferiorEC());
+                        tabla.setRangoInferiorPH(infoBasica.getRangoInferiorPH());
+                        tabla.setRangoSuperiorEC(infoBasica.getRangoSuperiorEC());
+                        tabla.setRangoSuperiorPH(infoBasica.getRangoSuperiorPH());
+                    }
                     tabla.save();
                     return tabla;
                 }

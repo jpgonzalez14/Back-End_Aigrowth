@@ -14,7 +14,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 GET     /plantas                    controllers.PlantaController.getPlantas()
 GET     /planta/:id                 controllers.PlantaController.getPlanta(id: Long)
-POST    /categoria/:id/planta       controllers.PlantaController.createPlantaEnCategoria(id: Long)
+POST    /planta                     controllers.PlantaController.createPlantaEnCategoria()
 PUT     /planta/:id                 controllers.PlantaController.updatePlanta(id: Long)
 DELETE  /planta/:id                 controllers.PlantaController.deletePlanta(id: Long)
 
@@ -36,6 +36,32 @@ DELETE  /usuario/:id                controllers.UsuarioController.deleteUsuario(
 
 GET     /tablas                     controllers.TablaDeCrecimientoController.getTablas()
 GET     /tabla/:id                  controllers.TablaDeCrecimientoController.getTabla(id: Long)
-POST    /tabla                      controllers.TablaDeCrecimientoController.createTabla()
+POST    /planta/:id/tabla           controllers.TablaDeCrecimientoController.createTabla(id: Long)
 PUT     /tabla/:id                  controllers.TablaDeCrecimientoController.updateTabla(id: Long)
 DELETE  /tabla/:id                  controllers.TablaDeCrecimientoController.deleteTabla(id: Long)
+
+#Rutas Tabla estatica
+
+GET     /tablas_estatica            controllers.TablaEstaticaController.getTablas()
+GET     /tabla_estatica/:id         controllers.TablaEstaticaController.getTabla(id: Long)
+POST    /tabla_estatica             controllers.TablaEstaticaController.createTabla()
+PUT     /tabla_estatica/:id         controllers.TablaEstaticaController.updateTabla(id: Long)
+DELETE  /tabla_estatica/:id         controllers.TablaEstaticaController.deleteTabla(id: Long)
+
+#Rutas de los reportes
+
+GET     /planta/:id/reportes         controllers.ReporteController.getReportes(id: Long)
+#GET     /planta/:id/reporte/:id     controllers.ReporteController.getReporte(id: Long)
+#POST    /planta/:id/reporte         controllers.ReporteController.createReporte()
+#PUT     /planta/:id/reporte/:id     controllers.ReporteController.updateReporte(id: Long)
+#DELETE  /planta/:id/reporte/:id     controllers.ReporteController.deleteReporte(id: Long)
+
+#Rutas sensores
+
+GET      /sensores                   controllers.SensorController.getSensores()
+GET      /sensor/:id                 controllers.SensorController.getSensor(id: Long)
+POST     /planta/:id/sensor          controllers.SensorController.createSensor(id: Long)
+PUT      /planta/:idP/sensor/:id     controllers.SensorController.updateSensor(id: Long, idP: Long)
+DELETE   /sensor/:id                 controllers.SensorController.deleteSensor(id: Long)
+
+

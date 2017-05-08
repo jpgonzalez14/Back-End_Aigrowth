@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/routes
-// @DATE:Wed May 03 16:14:19 COT 2017
+// @SOURCE:/Users/Sofia/Documents/Back-End_Aigrowth/conf/routes
+// @DATE:Mon May 08 11:15:02 COT 2017
 
 package router
 
@@ -23,15 +23,21 @@ class Routes(
   // @LINE:10
   AsyncController_3: controllers.AsyncController,
   // @LINE:13
-  Assets_7: controllers.Assets,
+  Assets_9: controllers.Assets,
   // @LINE:15
-  PlantaController_6: controllers.PlantaController,
+  PlantaController_8: controllers.PlantaController,
   // @LINE:21
   CategoriaController_0: controllers.CategoriaController,
   // @LINE:29
   UsuarioController_5: controllers.UsuarioController,
   // @LINE:37
   TablaDeCrecimientoController_4: controllers.TablaDeCrecimientoController,
+  // @LINE:45
+  TablaEstaticaController_6: controllers.TablaEstaticaController,
+  // @LINE:53
+  ReporteController_7: controllers.ReporteController,
+  // @LINE:61
+  SensorController_10: controllers.SensorController,
   val prefix: String
 ) extends GeneratedRouter {
 
@@ -44,22 +50,28 @@ class Routes(
     // @LINE:10
     AsyncController_3: controllers.AsyncController,
     // @LINE:13
-    Assets_7: controllers.Assets,
+    Assets_9: controllers.Assets,
     // @LINE:15
-    PlantaController_6: controllers.PlantaController,
+    PlantaController_8: controllers.PlantaController,
     // @LINE:21
     CategoriaController_0: controllers.CategoriaController,
     // @LINE:29
     UsuarioController_5: controllers.UsuarioController,
     // @LINE:37
-    TablaDeCrecimientoController_4: controllers.TablaDeCrecimientoController
-  ) = this(errorHandler, HomeController_2, CountController_1, AsyncController_3, Assets_7, PlantaController_6, CategoriaController_0, UsuarioController_5, TablaDeCrecimientoController_4, "/")
+    TablaDeCrecimientoController_4: controllers.TablaDeCrecimientoController,
+    // @LINE:45
+    TablaEstaticaController_6: controllers.TablaEstaticaController,
+    // @LINE:53
+    ReporteController_7: controllers.ReporteController,
+    // @LINE:61
+    SensorController_10: controllers.SensorController
+  ) = this(errorHandler, HomeController_2, CountController_1, AsyncController_3, Assets_9, PlantaController_8, CategoriaController_0, UsuarioController_5, TablaDeCrecimientoController_4, TablaEstaticaController_6, ReporteController_7, SensorController_10, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_2, CountController_1, AsyncController_3, Assets_7, PlantaController_6, CategoriaController_0, UsuarioController_5, TablaDeCrecimientoController_4, prefix)
+    new Routes(errorHandler, HomeController_2, CountController_1, AsyncController_3, Assets_9, PlantaController_8, CategoriaController_0, UsuarioController_5, TablaDeCrecimientoController_4, TablaEstaticaController_6, ReporteController_7, SensorController_10, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -73,7 +85,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """plantas""", """controllers.PlantaController.getPlantas()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """planta/""" + "$" + """id<[^/]+>""", """controllers.PlantaController.getPlanta(id:Long)"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """categoria/""" + "$" + """id<[^/]+>/planta""", """controllers.PlantaController.createPlantaEnCategoria(id:Long)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """planta""", """controllers.PlantaController.createPlantaEnCategoria()"""),
     ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """planta/""" + "$" + """id<[^/]+>""", """controllers.PlantaController.updatePlanta(id:Long)"""),
     ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """planta/""" + "$" + """id<[^/]+>""", """controllers.PlantaController.deletePlanta(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """categoria""", """controllers.CategoriaController.getCategorias()"""),
@@ -88,9 +100,20 @@ class Routes(
     ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """usuario/""" + "$" + """id<[^/]+>""", """controllers.UsuarioController.deleteUsuario(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tablas""", """controllers.TablaDeCrecimientoController.getTablas()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tabla/""" + "$" + """id<[^/]+>""", """controllers.TablaDeCrecimientoController.getTabla(id:Long)"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tabla""", """controllers.TablaDeCrecimientoController.createTabla()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """planta/""" + "$" + """id<[^/]+>/tabla""", """controllers.TablaDeCrecimientoController.createTabla(id:Long)"""),
     ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tabla/""" + "$" + """id<[^/]+>""", """controllers.TablaDeCrecimientoController.updateTabla(id:Long)"""),
     ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tabla/""" + "$" + """id<[^/]+>""", """controllers.TablaDeCrecimientoController.deleteTabla(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tablas_estatica""", """controllers.TablaEstaticaController.getTablas()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tabla_estatica/""" + "$" + """id<[^/]+>""", """controllers.TablaEstaticaController.getTabla(id:Long)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tabla_estatica""", """controllers.TablaEstaticaController.createTabla()"""),
+    ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tabla_estatica/""" + "$" + """id<[^/]+>""", """controllers.TablaEstaticaController.updateTabla(id:Long)"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tabla_estatica/""" + "$" + """id<[^/]+>""", """controllers.TablaEstaticaController.deleteTabla(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """planta/""" + "$" + """id<[^/]+>/reportes""", """controllers.ReporteController.getReportes(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """sensores""", """controllers.SensorController.getSensores()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """sensor/""" + "$" + """id<[^/]+>""", """controllers.SensorController.getSensor(id:Long)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """planta/""" + "$" + """id<[^/]+>/sensor""", """controllers.SensorController.createSensor(id:Long)"""),
+    ("""PUT""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """planta/""" + "$" + """idP<[^/]+>/sensor/""" + "$" + """id<[^/]+>""", """controllers.SensorController.updateSensor(id:Long, idP:Long)"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """sensor/""" + "$" + """id<[^/]+>""", """controllers.SensorController.deleteSensor(id:Long)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -154,7 +177,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
   private[this] lazy val controllers_Assets_versioned3_invoker = createInvoker(
-    Assets_7.versioned(fakeValue[String], fakeValue[Asset]),
+    Assets_9.versioned(fakeValue[String], fakeValue[Asset]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -171,7 +194,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("plantas")))
   )
   private[this] lazy val controllers_PlantaController_getPlantas4_invoker = createInvoker(
-    PlantaController_6.getPlantas(),
+    PlantaController_8.getPlantas(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PlantaController",
@@ -188,7 +211,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("planta/"), DynamicPart("id", """[^/]+""",true)))
   )
   private[this] lazy val controllers_PlantaController_getPlanta5_invoker = createInvoker(
-    PlantaController_6.getPlanta(fakeValue[Long]),
+    PlantaController_8.getPlanta(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PlantaController",
@@ -202,18 +225,18 @@ class Routes(
 
   // @LINE:17
   private[this] lazy val controllers_PlantaController_createPlantaEnCategoria6_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("categoria/"), DynamicPart("id", """[^/]+""",true), StaticPart("/planta")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("planta")))
   )
   private[this] lazy val controllers_PlantaController_createPlantaEnCategoria6_invoker = createInvoker(
-    PlantaController_6.createPlantaEnCategoria(fakeValue[Long]),
+    PlantaController_8.createPlantaEnCategoria(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PlantaController",
       "createPlantaEnCategoria",
-      Seq(classOf[Long]),
+      Nil,
       "POST",
       """""",
-      this.prefix + """categoria/""" + "$" + """id<[^/]+>/planta"""
+      this.prefix + """planta"""
     )
   )
 
@@ -222,7 +245,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("planta/"), DynamicPart("id", """[^/]+""",true)))
   )
   private[this] lazy val controllers_PlantaController_updatePlanta7_invoker = createInvoker(
-    PlantaController_6.updatePlanta(fakeValue[Long]),
+    PlantaController_8.updatePlanta(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PlantaController",
@@ -239,7 +262,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("planta/"), DynamicPart("id", """[^/]+""",true)))
   )
   private[this] lazy val controllers_PlantaController_deletePlanta8_invoker = createInvoker(
-    PlantaController_6.deletePlanta(fakeValue[Long]),
+    PlantaController_8.deletePlanta(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PlantaController",
@@ -457,18 +480,18 @@ class Routes(
 
   // @LINE:39
   private[this] lazy val controllers_TablaDeCrecimientoController_createTabla21_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("tabla")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("planta/"), DynamicPart("id", """[^/]+""",true), StaticPart("/tabla")))
   )
   private[this] lazy val controllers_TablaDeCrecimientoController_createTabla21_invoker = createInvoker(
-    TablaDeCrecimientoController_4.createTabla(),
+    TablaDeCrecimientoController_4.createTabla(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.TablaDeCrecimientoController",
       "createTabla",
-      Nil,
+      Seq(classOf[Long]),
       "POST",
       """""",
-      this.prefix + """tabla"""
+      this.prefix + """planta/""" + "$" + """id<[^/]+>/tabla"""
     )
   )
 
@@ -506,6 +529,193 @@ class Routes(
     )
   )
 
+  // @LINE:45
+  private[this] lazy val controllers_TablaEstaticaController_getTablas24_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("tablas_estatica")))
+  )
+  private[this] lazy val controllers_TablaEstaticaController_getTablas24_invoker = createInvoker(
+    TablaEstaticaController_6.getTablas(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TablaEstaticaController",
+      "getTablas",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """tablas_estatica"""
+    )
+  )
+
+  // @LINE:46
+  private[this] lazy val controllers_TablaEstaticaController_getTabla25_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("tabla_estatica/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_TablaEstaticaController_getTabla25_invoker = createInvoker(
+    TablaEstaticaController_6.getTabla(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TablaEstaticaController",
+      "getTabla",
+      Seq(classOf[Long]),
+      "GET",
+      """""",
+      this.prefix + """tabla_estatica/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
+  // @LINE:47
+  private[this] lazy val controllers_TablaEstaticaController_createTabla26_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("tabla_estatica")))
+  )
+  private[this] lazy val controllers_TablaEstaticaController_createTabla26_invoker = createInvoker(
+    TablaEstaticaController_6.createTabla(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TablaEstaticaController",
+      "createTabla",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """tabla_estatica"""
+    )
+  )
+
+  // @LINE:48
+  private[this] lazy val controllers_TablaEstaticaController_updateTabla27_route = Route("PUT",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("tabla_estatica/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_TablaEstaticaController_updateTabla27_invoker = createInvoker(
+    TablaEstaticaController_6.updateTabla(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TablaEstaticaController",
+      "updateTabla",
+      Seq(classOf[Long]),
+      "PUT",
+      """""",
+      this.prefix + """tabla_estatica/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
+  // @LINE:49
+  private[this] lazy val controllers_TablaEstaticaController_deleteTabla28_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("tabla_estatica/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_TablaEstaticaController_deleteTabla28_invoker = createInvoker(
+    TablaEstaticaController_6.deleteTabla(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TablaEstaticaController",
+      "deleteTabla",
+      Seq(classOf[Long]),
+      "DELETE",
+      """""",
+      this.prefix + """tabla_estatica/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
+  // @LINE:53
+  private[this] lazy val controllers_ReporteController_getReportes29_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("planta/"), DynamicPart("id", """[^/]+""",true), StaticPart("/reportes")))
+  )
+  private[this] lazy val controllers_ReporteController_getReportes29_invoker = createInvoker(
+    ReporteController_7.getReportes(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ReporteController",
+      "getReportes",
+      Seq(classOf[Long]),
+      "GET",
+      """""",
+      this.prefix + """planta/""" + "$" + """id<[^/]+>/reportes"""
+    )
+  )
+
+  // @LINE:61
+  private[this] lazy val controllers_SensorController_getSensores30_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("sensores")))
+  )
+  private[this] lazy val controllers_SensorController_getSensores30_invoker = createInvoker(
+    SensorController_10.getSensores(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SensorController",
+      "getSensores",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """sensores"""
+    )
+  )
+
+  // @LINE:62
+  private[this] lazy val controllers_SensorController_getSensor31_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("sensor/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_SensorController_getSensor31_invoker = createInvoker(
+    SensorController_10.getSensor(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SensorController",
+      "getSensor",
+      Seq(classOf[Long]),
+      "GET",
+      """""",
+      this.prefix + """sensor/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
+  // @LINE:63
+  private[this] lazy val controllers_SensorController_createSensor32_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("planta/"), DynamicPart("id", """[^/]+""",true), StaticPart("/sensor")))
+  )
+  private[this] lazy val controllers_SensorController_createSensor32_invoker = createInvoker(
+    SensorController_10.createSensor(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SensorController",
+      "createSensor",
+      Seq(classOf[Long]),
+      "POST",
+      """""",
+      this.prefix + """planta/""" + "$" + """id<[^/]+>/sensor"""
+    )
+  )
+
+  // @LINE:64
+  private[this] lazy val controllers_SensorController_updateSensor33_route = Route("PUT",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("planta/"), DynamicPart("idP", """[^/]+""",true), StaticPart("/sensor/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_SensorController_updateSensor33_invoker = createInvoker(
+    SensorController_10.updateSensor(fakeValue[Long], fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SensorController",
+      "updateSensor",
+      Seq(classOf[Long], classOf[Long]),
+      "PUT",
+      """""",
+      this.prefix + """planta/""" + "$" + """idP<[^/]+>/sensor/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
+  // @LINE:65
+  private[this] lazy val controllers_SensorController_deleteSensor34_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("sensor/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_SensorController_deleteSensor34_invoker = createInvoker(
+    SensorController_10.deleteSensor(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SensorController",
+      "deleteSensor",
+      Seq(classOf[Long]),
+      "DELETE",
+      """""",
+      this.prefix + """sensor/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -530,37 +740,37 @@ class Routes(
     // @LINE:13
     case controllers_Assets_versioned3_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned3_invoker.call(Assets_7.versioned(path, file))
+        controllers_Assets_versioned3_invoker.call(Assets_9.versioned(path, file))
       }
   
     // @LINE:15
     case controllers_PlantaController_getPlantas4_route(params) =>
       call { 
-        controllers_PlantaController_getPlantas4_invoker.call(PlantaController_6.getPlantas())
+        controllers_PlantaController_getPlantas4_invoker.call(PlantaController_8.getPlantas())
       }
   
     // @LINE:16
     case controllers_PlantaController_getPlanta5_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_PlantaController_getPlanta5_invoker.call(PlantaController_6.getPlanta(id))
+        controllers_PlantaController_getPlanta5_invoker.call(PlantaController_8.getPlanta(id))
       }
   
     // @LINE:17
     case controllers_PlantaController_createPlantaEnCategoria6_route(params) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_PlantaController_createPlantaEnCategoria6_invoker.call(PlantaController_6.createPlantaEnCategoria(id))
+      call { 
+        controllers_PlantaController_createPlantaEnCategoria6_invoker.call(PlantaController_8.createPlantaEnCategoria())
       }
   
     // @LINE:18
     case controllers_PlantaController_updatePlanta7_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_PlantaController_updatePlanta7_invoker.call(PlantaController_6.updatePlanta(id))
+        controllers_PlantaController_updatePlanta7_invoker.call(PlantaController_8.updatePlanta(id))
       }
   
     // @LINE:19
     case controllers_PlantaController_deletePlanta8_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_PlantaController_deletePlanta8_invoker.call(PlantaController_6.deletePlanta(id))
+        controllers_PlantaController_deletePlanta8_invoker.call(PlantaController_8.deletePlanta(id))
       }
   
     // @LINE:21
@@ -637,8 +847,8 @@ class Routes(
   
     // @LINE:39
     case controllers_TablaDeCrecimientoController_createTabla21_route(params) =>
-      call { 
-        controllers_TablaDeCrecimientoController_createTabla21_invoker.call(TablaDeCrecimientoController_4.createTabla())
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_TablaDeCrecimientoController_createTabla21_invoker.call(TablaDeCrecimientoController_4.createTabla(id))
       }
   
     // @LINE:40
@@ -651,6 +861,72 @@ class Routes(
     case controllers_TablaDeCrecimientoController_deleteTabla23_route(params) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_TablaDeCrecimientoController_deleteTabla23_invoker.call(TablaDeCrecimientoController_4.deleteTabla(id))
+      }
+  
+    // @LINE:45
+    case controllers_TablaEstaticaController_getTablas24_route(params) =>
+      call { 
+        controllers_TablaEstaticaController_getTablas24_invoker.call(TablaEstaticaController_6.getTablas())
+      }
+  
+    // @LINE:46
+    case controllers_TablaEstaticaController_getTabla25_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_TablaEstaticaController_getTabla25_invoker.call(TablaEstaticaController_6.getTabla(id))
+      }
+  
+    // @LINE:47
+    case controllers_TablaEstaticaController_createTabla26_route(params) =>
+      call { 
+        controllers_TablaEstaticaController_createTabla26_invoker.call(TablaEstaticaController_6.createTabla())
+      }
+  
+    // @LINE:48
+    case controllers_TablaEstaticaController_updateTabla27_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_TablaEstaticaController_updateTabla27_invoker.call(TablaEstaticaController_6.updateTabla(id))
+      }
+  
+    // @LINE:49
+    case controllers_TablaEstaticaController_deleteTabla28_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_TablaEstaticaController_deleteTabla28_invoker.call(TablaEstaticaController_6.deleteTabla(id))
+      }
+  
+    // @LINE:53
+    case controllers_ReporteController_getReportes29_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_ReporteController_getReportes29_invoker.call(ReporteController_7.getReportes(id))
+      }
+  
+    // @LINE:61
+    case controllers_SensorController_getSensores30_route(params) =>
+      call { 
+        controllers_SensorController_getSensores30_invoker.call(SensorController_10.getSensores())
+      }
+  
+    // @LINE:62
+    case controllers_SensorController_getSensor31_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_SensorController_getSensor31_invoker.call(SensorController_10.getSensor(id))
+      }
+  
+    // @LINE:63
+    case controllers_SensorController_createSensor32_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_SensorController_createSensor32_invoker.call(SensorController_10.createSensor(id))
+      }
+  
+    // @LINE:64
+    case controllers_SensorController_updateSensor33_route(params) =>
+      call(params.fromPath[Long]("id", None), params.fromPath[Long]("idP", None)) { (id, idP) =>
+        controllers_SensorController_updateSensor33_invoker.call(SensorController_10.updateSensor(id, idP))
+      }
+  
+    // @LINE:65
+    case controllers_SensorController_deleteSensor34_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_SensorController_deleteSensor34_invoker.call(SensorController_10.deleteSensor(id))
       }
   }
 }

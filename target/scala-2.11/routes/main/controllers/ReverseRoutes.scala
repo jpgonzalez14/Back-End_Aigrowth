@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/routes
-// @DATE:Wed May 03 16:14:19 COT 2017
+// @SOURCE:/Users/Sofia/Documents/Back-End_Aigrowth/conf/routes
+// @DATE:Mon May 08 11:15:02 COT 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -21,9 +21,9 @@ package controllers {
 
   
     // @LINE:39
-    def createTabla(): Call = {
+    def createTabla(id:Long): Call = {
       import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "tabla")
+      Call("POST", _prefix + { _defaultPrefix } + "planta/" + implicitly[PathBindable[Long]].unbind("id", id) + "/tabla")
     }
   
     // @LINE:41
@@ -135,9 +135,9 @@ package controllers {
     }
   
     // @LINE:17
-    def createPlantaEnCategoria(id:Long): Call = {
+    def createPlantaEnCategoria(): Call = {
       import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "categoria/" + implicitly[PathBindable[Long]].unbind("id", id) + "/planta")
+      Call("POST", _prefix + { _defaultPrefix } + "planta")
     }
   
     // @LINE:16
@@ -186,6 +186,99 @@ package controllers {
     def message(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "message")
+    }
+  
+  }
+
+  // @LINE:61
+  class ReverseSensorController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:64
+    def updateSensor(id:Long, idP:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("PUT", _prefix + { _defaultPrefix } + "planta/" + implicitly[PathBindable[Long]].unbind("idP", idP) + "/sensor/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:63
+    def createSensor(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "planta/" + implicitly[PathBindable[Long]].unbind("id", id) + "/sensor")
+    }
+  
+    // @LINE:65
+    def deleteSensor(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("DELETE", _prefix + { _defaultPrefix } + "sensor/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:62
+    def getSensor(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "sensor/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:61
+    def getSensores(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "sensores")
+    }
+  
+  }
+
+  // @LINE:53
+  class ReverseReporteController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:53
+    def getReportes(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "planta/" + implicitly[PathBindable[Long]].unbind("id", id) + "/reportes")
+    }
+  
+  }
+
+  // @LINE:45
+  class ReverseTablaEstaticaController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:47
+    def createTabla(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "tabla_estatica")
+    }
+  
+    // @LINE:49
+    def deleteTabla(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("DELETE", _prefix + { _defaultPrefix } + "tabla_estatica/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:48
+    def updateTabla(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("PUT", _prefix + { _defaultPrefix } + "tabla_estatica/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:45
+    def getTablas(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "tablas_estatica")
+    }
+  
+    // @LINE:46
+    def getTabla(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "tabla_estatica/" + implicitly[PathBindable[Long]].unbind("id", id))
     }
   
   }

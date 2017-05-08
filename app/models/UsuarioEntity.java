@@ -3,6 +3,7 @@ package models;
 import com.avaje.ebean.Model;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by aj.paredes10 on 27/04/17.
@@ -20,6 +21,9 @@ public class UsuarioEntity extends Model
     private String nombre;
     private String clave;
     private String correo;
+
+    @OneToMany(mappedBy = "usuario",cascade=CascadeType.ALL)
+    private List<HuertaEntity> huertas;
 
     public UsuarioEntity()
     {

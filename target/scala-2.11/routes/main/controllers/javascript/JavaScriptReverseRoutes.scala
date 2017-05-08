@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/routes
-// @DATE:Wed May 03 16:14:19 COT 2017
+// @SOURCE:/Users/Sofia/Documents/Back-End_Aigrowth/conf/routes
+// @DATE:Mon May 08 11:15:02 COT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -27,8 +27,8 @@ package controllers.javascript {
     def createTabla: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TablaDeCrecimientoController.createTabla",
       """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "tabla"})
+        function(id0) {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "planta/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0) + "/tabla"})
         }
       """
     )
@@ -197,8 +197,8 @@ package controllers.javascript {
     def createPlantaEnCategoria: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PlantaController.createPlantaEnCategoria",
       """
-        function(id0) {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "categoria/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0) + "/planta"})
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "planta"})
         }
       """
     )
@@ -269,6 +269,146 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "message"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:61
+  class ReverseSensorController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:64
+    def updateSensor: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SensorController.updateSensor",
+      """
+        function(id0,idP1) {
+          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "planta/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("idP", idP1) + "/sensor/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:63
+    def createSensor: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SensorController.createSensor",
+      """
+        function(id0) {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "planta/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0) + "/sensor"})
+        }
+      """
+    )
+  
+    // @LINE:65
+    def deleteSensor: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SensorController.deleteSensor",
+      """
+        function(id0) {
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "sensor/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:62
+    def getSensor: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SensorController.getSensor",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "sensor/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:61
+    def getSensores: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SensorController.getSensores",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "sensores"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:53
+  class ReverseReporteController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:53
+    def getReportes: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ReporteController.getReportes",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "planta/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0) + "/reportes"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:45
+  class ReverseTablaEstaticaController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:47
+    def createTabla: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaEstaticaController.createTabla",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "tabla_estatica"})
+        }
+      """
+    )
+  
+    // @LINE:49
+    def deleteTabla: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaEstaticaController.deleteTabla",
+      """
+        function(id0) {
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "tabla_estatica/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:48
+    def updateTabla: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaEstaticaController.updateTabla",
+      """
+        function(id0) {
+          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "tabla_estatica/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:45
+    def getTablas: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaEstaticaController.getTablas",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "tablas_estatica"})
+        }
+      """
+    )
+  
+    // @LINE:46
+    def getTabla: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TablaEstaticaController.getTabla",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "tabla_estatica/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
         }
       """
     )

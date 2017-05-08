@@ -1,2 +1,2 @@
-[0m[[0minfo[0m] [0m/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/app/dispatchers/AkkaDispatcher.java: /Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/app/dispatchers/AkkaDispatcher.java uses or overrides a deprecated API.[0m
-[0m[[0minfo[0m] [0m/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/app/dispatchers/AkkaDispatcher.java: Recompile with -Xlint:deprecation for details.[0m
+[0m[[33mwarn[0m] [0m/Users/Sofia/Documents/Back-End_Aigrowth/app/controllers/SensorController.java:5: com.sun.org.apache.regexp.internal.RE is internal proprietary API and may be removed in a future release[0m
+[0m[[33mwarn[0m] [0mcom.sun.org.apache.regexp.internal.RE[0m

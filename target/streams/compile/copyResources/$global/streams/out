@@ -1,7 +1,7 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/application.conf,/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/evolutions,/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/logback.xml,/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/routes,/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/evolutions/default,/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/evolutions/default/1.sql,/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/target/scala-2.11/classes/evolutions/default/1.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Sofia/Documents/Back-End_Aigrowth/conf/application.conf,/Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Sofia/Documents/Back-End_Aigrowth/conf/evolutions,/Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Sofia/Documents/Back-End_Aigrowth/conf/logback.xml,/Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Sofia/Documents/Back-End_Aigrowth/conf/routes,/Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Sofia/Documents/Back-End_Aigrowth/conf/evolutions/default,/Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Sofia/Documents/Back-End_Aigrowth/conf/evolutions/default/1.sql,/Users/Sofia/Documents/Back-End_Aigrowth/target/scala-2.11/classes/evolutions/default/1.sql)[0m

@@ -7,6 +7,8 @@ import models.*;
 import play.libs.Json;
 import play.mvc.*;
 
+import java.util.List;
+import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
@@ -51,16 +53,53 @@ public class PlantaController {
         );
     }
 
-    public CompletionStage<Result> createPlantaEnCategoria(Long idCategoria){
+    public CompletionStage<Result> createPlantaEnCategoria(){
+        System.out.println("Creando planta");
         MessageDispatcher jdbcDispatcher = AkkaDispatcher.jdbcDispatcher;
         JsonNode n = request().body().asJson();
         PlantaEntity planta = Json.fromJson( n , PlantaEntity.class ) ;
+        TablaDeCrecimientoEntity tabla = new TablaDeCrecimientoEntity();
+        SensorEntity sensor = new SensorEntity();
+        planta.setSensor(sensor);
+        planta.setTabla(tabla);
         return CompletableFuture.supplyAsync(
                 ()->{
-                    CategoriaEntity categoria = CategoriaEntity.FINDER.byId(idCategoria);
-                    categoria.addPlanta(planta);
-                    planta.setCategoria(categoria);
-                    categoria.update();
+                    //Tabla de crecimiento
+                    tabla.setTipoPlanta(planta.getNombre());
+                    List<TablaEstaticaEntity> infoBasicaList = TablaEstaticaEntity.FINDER.all();
+                    TablaEstaticaEntity infoBasica = null;
+                    for (int i = 0; i < infoBasicaList.size(); i++)
+                    {
+                        System.out.println("Entro lista de plantas con tablas");
+                        if(infoBasicaList.get(i).getTipoPlanta().equals(planta.getNombre())){
+                            infoBasica = infoBasicaList.get(i);
+                        }
+                    }
+
+                    if(infoBasica != null)
+                    {
+                        tabla.setRangoInferiorEC(infoBasica.getRangoInferiorEC());
+                        tabla.setRangoInferiorPH(infoBasica.getRangoInferiorPH());
+                        tabla.setRangoSuperiorEC(infoBasica.getRangoSuperiorEC());
+                        tabla.setRangoSuperiorPH(infoBasica.getRangoSuperiorPH());
+
+                    }
+
+                    Random r = new Random();
+                    double rangeMinPh = tabla.getRangoInferiorPH();
+                    double rangeMaxPh = tabla.getRangoSuperiorPH();
+                    double ph = rangeMinPh + (rangeMaxPh - rangeMinPh) * r.nextDouble();
+                    double rangeMinEC = tabla.getRangoInferiorPH();
+                    double rangeMaxEC = tabla.getRangoSuperiorPH();
+                    double ec = rangeMinEC + (rangeMaxEC - rangeMinEC) * r.nextDouble();
+
+
+                    tabla.setPhInicial(ph);
+                    tabla.setEcInicial(ec);
+
+
+                    sensor.save();
+                    tabla.save();
                     planta.save();
                     return planta;
                 }

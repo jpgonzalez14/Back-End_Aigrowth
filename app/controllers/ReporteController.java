@@ -4,11 +4,12 @@ import akka.dispatch.MessageDispatcher;
 import com.fasterxml.jackson.databind.JsonNode;
 import dispatchers.AkkaDispatcher;
 import models.ReporteEntity;
-import models.TablaDeCrecimientoEntity;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 
@@ -19,13 +20,22 @@ import static play.libs.Json.toJson;
  */
 public class ReporteController extends Controller
 {
-    public CompletionStage<Result> getReportes()
+    public CompletionStage<Result> getReportes(Long idP)
     {
         MessageDispatcher jdbcDispatcher = AkkaDispatcher.jdbcDispatcher;
 
+        List<ReporteEntity> reportes = ReporteEntity.FINDER.all();
+        List<ReporteEntity> reportesFinal = new ArrayList<ReporteEntity>();
+        for (int i = 0; i< reportes.size();i++)
+        {
+            if(reportes.get(i).getPlanta().getId() == idP)
+            {
+                reportesFinal.add(reportes.get(i));
+            }
+        }
         return CompletableFuture.
-                supplyAsync(() -> { return ReporteEntity.FINDER.all(); } ,jdbcDispatcher)
-                .thenApply(reportes -> {return ok(toJson(reportes));}
+                supplyAsync(() -> { return reportesFinal; } ,jdbcDispatcher)
+                .thenApply(Reportes -> {return ok(toJson(Reportes));}
                 );
     }
 

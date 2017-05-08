@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/jp.gonzalez14/Documents/workspace/Back-End_Aigrowth/conf/routes
-// @DATE:Wed May 03 16:14:19 COT 2017
+// @SOURCE:/Users/Sofia/Documents/Back-End_Aigrowth/conf/routes
+// @DATE:Mon May 08 11:15:02 COT 2017
 
 
 package router {

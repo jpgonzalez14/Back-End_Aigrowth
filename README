@@ -47,3 +47,8 @@ Filters
 - ExampleFilter.java
 
   A simple filter that adds a header to every response.
+
+Recomendaciones
+================
+-Para hacer una recomendación hay que tener al menos una planta, cuando se crea una planta automáticamente se crea la tabla de recomendación y el sensor, y devuelve la info en un JSON
+-Con la planta creada, solo se usa el método update de sensor el cual tiene 2 path param (mirar routes), el id de la planta y el id del sensor, y se generan aleatoriamente los datos del sensor (simulando) y en base a eso genera una recomendación que devuelve en el JSON.
